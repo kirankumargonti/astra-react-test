@@ -28,7 +28,7 @@ const useNavItems = (): NavItem[] => {
       id: 3,
       name: 'Admin',
       path: '/admin',
-      showNavItem: isAuthenticated,
+      showNavItem: user?.nickname === 'admin' ? true : false,
     },
   ]
 }
